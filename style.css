@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 50%, #c61f1f 100%);
+position: relative;
+}
+.header_menu{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+}
+
+.logo{
+	color: white;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.menu a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	padding: 0 15px;
+
+}
+.active, .menu a:hover{
+	border-top: 2px solid #5dade2;
+	border-bottom: 2px solid #5dade2;
+}
+
+.contact{
+	
+	background-color: #d465ef;
+	padding: 12px 26px;
+	font-style: 14px;
+	font-weight: 500;
+	border:1px solid transparent;
+
+}
+.contact a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+
+}
+.contact:hover{
+	background:linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+}
+
+.main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.main h1{
+		font-size: 60px;
+		font-weight: 700;
+		color: white;
+}
+.main h2{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: white;
+}
+
+header:before{
+	content: "";
+	width: 520px;
+	height: 550px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	border-radius: 100px;
+	animation: bg 2s infinite alternate;
+}
+@keyframes bg{
+	0%{
+		border-radius: 100px;
+	}
+	100%{
+		border-radius: 50%;
+	}
+}
+
+.social_network{
+	width: 100px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	top: 40%;
+}
+.icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon{
+	margin: 20px 0;
+}
+.icon:hover{
+		background:linear-gradient(to bottom, #d465ef 0%, #615cfd 100%);	
+}
